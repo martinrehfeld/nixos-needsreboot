@@ -1,0 +1,24 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/rust:latest",
+
+    "features": {
+    },
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "rust-lang.rust-analyzer"
+            ]
+        }
+    },
+
+    "workspaceFolder": "/workspace",
+    "workspaceMount": "source=remote-workspace,target=/workspace,type=volume",
+
+    "mounts": [
+        "source=/run/booted-system,target=/run/booted-system,type=bind,consistency=cached",
+        "source=/run/current-system,target=/run/current-system,type=bind,consistency=cached",
+        "source=/nix/store,target=/nix/store,type=bind,consistency=cached",
+        "source=/nix/var/nix/profiles/system,target=/nix/var/nix/profiles/system,type=bind,consistency=cached"
+    ]
+}
