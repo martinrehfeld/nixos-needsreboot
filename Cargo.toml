@@ -1,10 +1,10 @@
 [package]
 name = "nixos-needsreboot"
-version = "0.2.9"
+version = "0.2.10"
 edition = "2021"
 description = "Determine if you need to reboot your NixOS machine"
 license = "GPL-2.0-only"
-repository = "https://github.com/wimpysworld/nixos-needsreboot"
+repository = "https://github.com/martinrehfeld/nixos-needsreboot"
 readme = "README.md"
 keywords = [ "nixos" ]
 categories = [ "command-line-utilities" ]
